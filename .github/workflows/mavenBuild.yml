@@ -3,12 +3,6 @@ name: Test, Upload artifact and Deploy to Heroku
 on: push
 
 jobs:
- steps:
-  - name: Pwsh command
-    run: Write-Host ${env:TOKEN}
-    env:
-      PREBUILD_TOKEN: ${{ secrets.TOKEN }}
-    shell: pwsh
   test:
     runs-on: ubuntu-latest
     strategy:
