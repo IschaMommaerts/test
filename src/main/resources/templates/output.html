@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1 th:text="'Hello ' + ${person.getGivenName()}">Hello!</h1>
+<h1 th:text="'Hello ' + ${person.getGivenName() + ' ' + person.getSurname()}">Hello!</h1>
 
 <p><a href="/">Back to the homepage</a></p>
 
